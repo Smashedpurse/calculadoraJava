@@ -30,8 +30,12 @@ public class calculadoraJava {
                 JOptionPane.showMessageDialog(null,"El resultado de la multiplicacion es " + resultadoMultipliacion);
                 break;
             case "division" :
-                JOptionPane.showMessageDialog(null,"El resultado de la division es " + resultadoDivision);
-                break;
+                if(num2 == 0){
+                    JOptionPane.showMessageDialog(null,"No es posible dividir entre 0");
+                }else {
+                    JOptionPane.showMessageDialog(null, "El resultado de la division es " + resultadoDivision);
+                    break;
+                }
         }
     }
 }
